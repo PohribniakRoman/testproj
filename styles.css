@@ -1,0 +1,136 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* code */
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  -webkit-box-shadow: 0px 0px 16px -4px #000000;
+  box-shadow: 0px 0px 16px -4px #000000;
+  position: relative;
+  width: 300px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.product__img {
+  height: 250px;
+  width: 90%;
+  margin: 20px auto;
+  background-image: url(https://www.sathya.in/media/47550/catalog/lg-9kg-fhv1409zwb-wi-fi-fully-automatic-front-loading-washing-machine-3.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product__id {
+  position: absolute;
+  color: gray;
+  font-size: 12px;
+  top: 10px;
+  right: 10px;
+}
+
+.product__content--title {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+.product__content--testimonials-wrap {
+  display: inline-block;
+  position: relative;
+}
+.product__content--testimonials-wrap::after {
+  content: attr(data-testimonials);
+  font-size: 12px;
+  width: 100px;
+  position: absolute;
+  left: 105%;
+  color: gray;
+}
+.product__content--testimonials {
+  margin: 12px 0;
+  color: gray;
+  font-size: 15px;
+}
+.product__content--tile {
+  margin: 7px 0;
+}
+.product__content--price p::before {
+  content: attr(data-discount);
+  color: gray;
+  text-decoration: line-through;
+  text-decoration-color: gray;
+  top: 100%;
+  font-size: 16px;
+  left: 0;
+  position: absolute;
+}
+.product__content--price p::after {
+  content: attr(data-cashback);
+  position: absolute;
+  left: 100%;
+  color: #000;
+  width: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: #fdeeb9;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+.product__content--price p {
+  position: relative;
+  font-style: normal;
+  font-size: 25px;
+  color: #ee4b32;
+  display: inline-block;
+}
+.product__content--price p::first-letter {
+  margin-right: 7px;
+}
+.product__content--price span {
+  color: gray;
+  font-size: 12px;
+}
+.product__content--tile span {
+  color: #fff;
+  font-size: 14px;
+  background-color: #ee4b32;
+  padding: 2px 5px;
+  margin: 10px 2px;
+  border-radius: 2px;
+}
+.product__content {
+  width: 80%;
+  margin: 0 auto;
+}
+.product__controls input {
+  background-color: #4aa852;
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+.product__controls--icons {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 15px;
+}
+.product__controls {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
